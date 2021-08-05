@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: myFonts;
+  src: url(/assets/fonts/Poppins-Light.ttf);
+}
+
+body {
+  font-family: myFonts;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+
+  #snow_fall {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: #262626 url(../images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  audio {
+    position: relative;
+    z-index: 1;
+  }
+
+  .wrapper {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+      color: #F8485E;
+      font-size: 60px;
+    }
+
+    .time {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #EEEEEE;
+
+        span {
+          font-size: 50px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
